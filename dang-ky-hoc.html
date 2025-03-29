@@ -28,13 +28,19 @@
     <section>
         <h2>Đăng Ký Tìm Gia Sư</h2>
         <form>
-            <label for="fullname">Họ và Tên:</label>
+            <label for="fullname">Họ và Tên phụ huynh:</label>
             <input type="text" id="fullname" name="fullname" required>
             
             <label for="phone">Số Điện Thoại:</label>
             <input type="tel" id="phone" name="phone" required>
+
+            <label for="fullname">Họ và Tên học sinh:</label>
+            <input type="text" id="fullname" name="fullname" required>
             
             <label for="subject">Môn Học Cần Gia Sư:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="subject">Số buổi học yêu cầu:</label>
             <input type="text" id="subject" name="subject" required>
             
             <label for="grade">Lớp Học:</label>
@@ -53,6 +59,9 @@
                 <option value="11">Lớp 11</option>
                 <option value="12">Lớp 12</option>
             </select>
+
+            <label for="subject">Yêu cầu riêng với giáo viên:</label>
+            <input type="text" id="subject" name="subject" required>
             
             <button type="submit">Gửi Yêu Cầu</button>
         </form>
