@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ - GIA SƯ BAN MÊ</title>
+    <title>GIA SƯ BAN MÊ</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
         
@@ -14,48 +14,88 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            text-align: center;
         }
-        
+
         .logo img {
             height: 50px;
         }
-        
-        .title {
-            flex: 2;
-            text-align: center;
-        }
-        
-        .contact {
+
+        .header-info {
             text-align: right;
-            flex: 1;
+            font-size: 14px;
         }
-        
+
+        .title {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
         nav a {
-            margin: 0 15px;
             text-decoration: none;
-            color: black;
+            background-color: orange;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff8c00;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            color: #0073e6;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .content p {
+            display: flex;
+            align-items: center;
+        }
+
+        .content p::before {
+            content: "✔";
+            color: green;
+            margin-right: 10px;
             font-weight: bold;
         }
-        
-        section { padding: 20px; }
-        
-        footer { background-color: #add8e6; color: white; padding: 15px; position: fixed; bottom: 0; width: 100%; }
+
+        footer {
+            background-color: #add8e6;
+            color: white;
+            padding: 5px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <div class="logo">
             <img src="logo.png" alt="Logo GIA SƯ BAN MÊ">
         </div>
         <div class="title">
             <h1>GIA SƯ BAN MÊ</h1>
-            <p>Gia sư tận tâm - Học sinh vươn tầm</p>
             <p>Trung tâm gia sư uy tín tại Buôn Ma Thuột</p>
         </div>
-        <div class="contact">
-            <p>📞 Zalo Thầy Tiến Toán</p>
-            <p> 0932 41 45 48</p>
-            <p>📧 email@example.com</p>
+        <div class="header-info">
+            <p>Liên hệ: 090xxxxxxx</p>
+            <p>Địa chỉ: Buôn Ma Thuột, Đắk Lắk</p>
         </div>
     </header>
     
