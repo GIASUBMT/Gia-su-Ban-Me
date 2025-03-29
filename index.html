@@ -9,7 +9,7 @@
         
         header {
             background-color: #add8e6;
-            color: black;
+            color: white;
             padding: 10px 20px;
             display: flex;
             align-items: center;
@@ -21,8 +21,8 @@
             text-align: left;
         }
         
-        .contact p {
-            margin: 5px 0;
+        .logo img {
+            height: 50px;
         }
         
         .title {
@@ -35,8 +35,8 @@
             flex: 1;
         }
         
-        .logo img {
-            height: 50px;
+        .contact p {
+            margin: 5px 0;
         }
         
         section { padding: 20px; }
@@ -45,38 +45,51 @@
         button { background-color: #28a745; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
         button:hover { background-color: #218838; }
         
-        footer { background-color: #007bff; color: white; padding: 15px; position: fixed; bottom: 0; width: 100%; }
+        footer { background-color: #add8e6; color: white; padding: 15px; position: fixed; bottom: 0; width: 100%; }
     </style>
 </head>
 <body>
     <header>
-        <div class="contact">
-            <p>📞 - Zalo Thầy Tiến Toán - 0932 41 45 48</p>
-            <p>📧 TÊN EMAIL@example.com</p>
+        <div class="logo">
+            <img src="logo.png" alt="Logo GIA SƯ BAN MÊ">
         </div>
         <div class="title">
             <h1>GIA SƯ BAN MÊ</h1>
             <p>Trung tâm gia sư uy tín tại Buôn Ma Thuột</p>
-            <p>Gia sư tận tâm - Học sinh vươn tầm</p>
-            <nav>
-                <a href="index.html">Trang chủ</a> | 
-                <a href="lop-can-gia-su.html">Lớp cần gia sư</a> | 
-                <a href="dang-ky-hoc.html">Tìm Gia Sư</a> | 
-                <a href="dang-ky-gia-su.html">Đăng Ký Làm Gia Sư</a>
-            </nav>
         </div>
-        <div class="logo">
-            <img src="logo.png" alt="Logo GIA SƯ BAN MÊ">
+        <div class="contact">
+            <p>📞 090xxxxxxx</p>
+            <p>📧 email@example.com</p>
         </div>
     </header>
     
     <section>
-        <h2>Giới Thiệu Trung Tâm</h2>
-        <p>Chúng tôi chuyên cung cấp gia sư chất lượng tại Buôn Ma Thuột...(CHỈNH SỬA THÊM TẠI ĐÂY)</p>
-    </section>
-    
-    <footer>
-        <p>Liên hệ: ĐT - Zalo : Thầy Tiến Toán - 0932 41 45 48 | Địa chỉ: 6/47 Tôn Thất Thuyết - Buôn Ma Thuột - Đắk Lắk</p>
-    </footer>
-</body>
-</html>
+        <h2>Đăng Ký Tìm Gia Sư</h2>
+        <form>
+            <label for="fullname">Họ và Tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            
+            <label for="phone">Số Điện Thoại:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="subject">Môn Học Cần Gia Sư:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="grade">Lớp Học:</label>
+            <select id="grade" name="grade" required>
+                <option value="">Chọn lớp học</option>
+                <option value="1">Lớp 1</option>
+                <option value="2">Lớp 2</option>
+                <option value="3">Lớp 3</option>
+                <option value="4">Lớp 4</option>
+                <option value="5">Lớp 5</option>
+                <option value="6">Lớp 6</option>
+                <option value="7">Lớp 7</option>
+                <option value="8">Lớp 8</option>
+                <option value="9">Lớp 9</option>
+                <option value="10">Lớp 10</option>
+                <option value="11">Lớp 11</option>
+                <option value="12">Lớp 12</option>
+            </select>
+            
+            <button type="submit">Gửi Yêu
