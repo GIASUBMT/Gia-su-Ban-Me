@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Lớp Cần Gia Sư</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header, footer { background-color: #ADD8E6; color: white; padding: 15px; font-size: 20px; }
+        form { max-width: 500px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background: #f9f9f9; }
+        input, select, textarea { width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #f8b400; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #e69500; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ĐĂNG LỚP CẦN GIA SƯ</h1>
+</header>
+
+<form>
+    <label for="maLop">Mã số lớp:</label>
+    <input type="text" id="maLop" name="maLop" required>
+
+    <label for="monHoc">Môn học:</label>
+    <input type="text" id="monHoc" name="monHoc" required>
+
+    <label for="lop">Học sinh lớp:</label>
+    <input type="text" id="lop" name="lop" required>
+
+    <label for="soBuoi">Số buổi/tuần:</label>
+    <input type="number" id="soBuoi" name="soBuoi" required>
+
+    <label for="mucLuong">Mức lương (VNĐ/tháng):</label>
+    <input type="text" id="mucLuong" name="mucLuong" required>
+
+    <label for="yeuCau">Yêu cầu:</label>
+    <textarea id="yeuCau" name="yeuCau" required></textarea>
+
+    <label for="diaChi">Địa chỉ:</label>
+    <input type="text" id="diaChi" name="diaChi" required>
+
+    <label for="tinhTrang">Tình trạng:</label>
+    <select id="tinhTrang" name="tinhTrang">
+        <option value="Chưa nhận">Chưa nhận</option>
+        <option value="Đã nhận">Đã nhận</option>
+    </select>
+
+    <button type="submit">Đăng lớp</button>
+</form>
+
+<footer>
+    <p>Liên hệ: Thầy Tiến Toán - 0932 41 45 48</p>
+</footer>
+
+</body>
+</html>
