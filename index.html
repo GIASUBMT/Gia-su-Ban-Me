@@ -3,20 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gia Sư Ban Mê - Trang Chủ</title>
+    <title>Trang Chủ - GIA SƯ BAN MÊ</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-        header, footer { background-color: #add8e6; color: white; padding: 15px; }
-        section { padding: 20px; max-width: 800px; margin: auto; text-align: left; }
+        
+        header {
+            background-color: #add8e6;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        .title {
+            flex: 2;
+            text-align: center;
+        }
+        
+        .contact {
+            text-align: right;
+            flex: 1;
+        }
+        
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        
+        section { padding: 20px; }
+        
+        footer { background-color: #add8e6; color: white; padding: 15px; position: fixed; bottom: 0; width: 100%; }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>GIA SƯ BAN MÊ</h1>
-</header>
-
-<section>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo GIA SƯ BAN MÊ">
+        </div>
+        <div class="title">
+            <h1>GIA SƯ BAN MÊ</h1>
+            <p>Gia sư tận tâm - Học sinh vươn tầm</p>
+            <p>Trung tâm gia sư uy tín tại Buôn Ma Thuột</p>
+        </div>
+        <div class="contact">
+            <p>📞 Zalo Thầy Tiến Toán</p>
+            <p> 0932 41 45 48</p>
+            <p>📧 email@example.com</p>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="Lop-can-gia-su.html">Lớp cần gia sư</a>
+        <a href="dang-ky-hoc.html">Đăng ký tìm gia sư</a>
+        <a href="dang-ky-gia-su.html">Đăng ký làm gia sư</a>
+    </nav>
+    
+    <section>
     <h2>Chìa Khóa Vươn Tới Thành Công</h2>
     <p>📚 <strong>Bạn đang tìm kiếm một gia sư tận tâm, giỏi chuyên môn, giúp con bạn tiến bộ vượt bậc?</strong></p>
     <p>💡 <strong>Bạn muốn cải thiện kết quả học tập nhưng chưa tìm được phương pháp học hiệu quả?</strong></p>
@@ -46,10 +96,9 @@
 
     <p><strong>💯 Gia Sư Ban Mê – Chắp Cánh Ước Mơ, Kiến Tạo Tương Lai! 💯</strong></p>
 </section>
-
-<footer>
-    <p>&copy; 2025 Gia Sư Ban Mê. Mọi quyền được bảo lưu.</p>
-</footer>
-
+    
+    <footer>
+        <p>Liên hệ: 0932 41 45 48 | Địa chỉ: 6/ 47 Tôn Thất Thuyết, Buôn Ma Thuột, Đắk Lắk</p>
+    </footer>
 </body>
 </html>
