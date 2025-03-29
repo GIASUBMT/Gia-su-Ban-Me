@@ -31,37 +31,36 @@
         <th>Địa chỉ</th>
         <th>Tình trạng</th>
     </tr>
-    <!-- Dữ liệu mẫu 112 lớp -->
-    <script>
-        const subjects = ['Toán', 'Vật Lý', 'Hóa Học', 'Tiếng Anh', 'Ngữ Văn', 'Sinh Học'];
-        const grades = [6, 7, 8, 9, 10, 11, 12];
-        const addresses = ['Tôn Đức Thắng, BMT', 'Nguyễn Văn Cừ, BMT', 'Lê Hồng Phong, BMT', 'Phan Chu Trinh, BMT', 'Y Moan, BMT', 'Hùng Vương, BMT'];
-        let tableContent = '';
-        
-        for (let i = 1; i <= 112; i++) {
-            let subject = subjects[Math.floor(Math.random() * subjects.length)];
-            let grade = grades[Math.floor(Math.random() * grades.length)];
-            let address = addresses[Math.floor(Math.random() * addresses.length)];
-            let sessions = Math.floor(Math.random() * 3) + 2; // 2-4 buổi
-            let salary = (Math.floor(Math.random() * 5) + 1) * 500000 + 'đ/tháng'; // từ 500k đến 2.5 triệu
-            let status = Math.random() > 0.5 ? 'accepted' : 'pending';
-            let statusText = status === 'accepted' ? 'Đã nhận' : 'Chưa nhận';
-            let requirement = 'Có kinh nghiệm, trách nhiệm';
-            
-            tableContent += `<tr>
-                <td>${i.toString().padStart(3, '0')}</td>
-                <td>${subject}</td>
-                <td>Lớp ${grade}</td>
-                <td>${sessions} buổi/tuần</td>
-                <td>${salary}</td>
-                <td>${requirement}</td>
-                <td>${address}</td>
-                <td class="${status}">${statusText}</td>
-            </tr>`;
-        }
-        
-        document.write(tableContent);
-    </script>
+    <tr>
+        <td>001</td>
+        <td>Toán</td>
+        <td>Lớp 8</td>
+        <td>3 buổi/tuần</td>
+        <td>1.800.000đ/tháng</td>
+        <td>Có kinh nghiệm dạy học sinh mất gốc</td>
+        <td>Tôn Đức Thắng, BMT</td>
+        <td class="pending">Chưa nhận</td>
+    </tr>
+    <tr>
+        <td>002</td>
+        <td>Tiếng Anh</td>
+        <td>Lớp 10</td>
+        <td>2 buổi/tuần</td>
+        <td>1.200.000đ/tháng</td>
+        <td>Giáo viên</td>
+        <td>Đường Y Moan, BMT</td>
+        <td class="accepted">Đã nhận</td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>Tiếng Anh</td>
+        <td>Lớp 7</td>
+        <td>2 buổi/tuần</td>
+        <td>1.000.000đ/tháng</td>
+        <td>Ưu tiên sinh viên chuyên ngành Anh</td>
+        <td>Đường Y Moan, BMT</td>
+        <td class="accepted">Đã nhận</td>
+    </tr>
 </table>
 
 <footer>
