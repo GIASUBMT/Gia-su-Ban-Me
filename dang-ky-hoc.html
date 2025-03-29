@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tìm Gia Sư - GIA SƯ BAN MÊ</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background-color: #007bff; color: white; padding: 20px; font-size: 24px; }
+        nav a { margin: 0 10px; color: white; text-decoration: none; font-size: 18px; }
+        section { padding: 20px; }
+        form { max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background: #f9f9f9; }
+        input, select { width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #28a745; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GIA SƯ BAN MÊ</h1>
+        <nav>
+            <a href="index.html">Trang chủ</a> | 
+            <a href="dang-ky-hoc.html">Tìm Gia Sư</a> | 
+            <a href="dang-ky-gia-su.html">Đăng Ký Làm Gia Sư</a>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Đăng Ký Tìm Gia Sư</h2>
+        <form>
+            <label for="fullname">Họ và Tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            
+            <label for="phone">Số Điện Thoại:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="subject">Môn Học Cần Gia Sư:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="grade">Lớp Học:</label>
+            <select id="grade" name="grade" required>
+                <option value="">Chọn lớp học</option>
+                <option value="1">Lớp 1</option>
+                <option value="2">Lớp 2</option>
+                <option value="3">Lớp 3</option>
+                <option value="4">Lớp 4</option>
+                <option value="5">Lớp 5</option>
+                <option value="6">Lớp 6</option>
+                <option value="7">Lớp 7</option>
+                <option value="8">Lớp 8</option>
+                <option value="9">Lớp 9</option>
+                <option value="10">Lớp 10</option>
+                <option value="11">Lớp 11</option>
+                <option value="12">Lớp 12</option>
+            </select>
+            
+            <button type="submit">Gửi Yêu Cầu</button>
+        </form>
+    </section>
+</body>
+</html>
